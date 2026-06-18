@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samruddhi Kotwal | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0f172a; color: white; line-height: 1.6; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; padding: 2rem 10%; align-items: center; background: #2f4069; position: sticky; top: 0; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { color: #38bdf8; text-decoration: none; font-weight: bold; }
+
+        /* Hero Section */
+        .hero { height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .highlight { color: #38bdf8; }
+        .social-links { margin-top: 20px; }
+        .social-links a { color: white; margin: 0 10px; text-decoration: none; font-size: 1.1rem; }
+
+        /* Sections */
+        section { padding: 80px 10%; }
+        h2 { text-align: center; margin-bottom: 40px; color: #38bdf8; }
+
+        /* Skills & Projects Grid */
+        .grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .card { background: #1e293b; padding: 2rem; border-radius: 15px; width: 300px; transition: 0.3s; border: 1px solid transparent; }
+        .card:hover { transform: translateY(-10px); border: 1px solid #38bdf8; }
+
+        footer { text-align: center; padding: 40px; background: #020617; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><strong>SK</strong></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm <span class="highlight">Samruddhi Kotwal</span></h1>
+        <p>B.Sc Computer Science Student | Python & Backend Developer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samruddhi-kotwal-956168k">LinkedIn</a> | 
+            <a href="https://github.com/samruddhikotwal">GitHub</a> | 
+            <a href="mailto:samruddhikotwal0707@email.com">Email</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Technical Skills</h2>
+        <div class="grid">
+            <div class="card"><h3>Backend</h3><p>Java, Servlets, JSP, Hibernate</p></div>
+            <div class="card"><h3>Automation</h3><p>Python, Data Scraping, Data Analysis</p></div>
+            <div class="card"><h3>Frontend</h3><p>HTML5, CSS3, JavaScript, Bootstrap</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Python Internship</h3>
+                <p>Completed at Hex Softwares. Focused on automation and data handling.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                <p>Assessment projects and technical assignments for Data Analyst roles.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Get In Touch</h2>
+        <p>I am currently seeking opportunities for <strong>Internships or Junior Developer roles</strong>. 
+           If you have any openings or would like to discuss my work, feel free to reach out!</p>
+        <br>
+        <a href="mailto:samruddhikotwal0707@gmail.com" 
+           style="color:#38bdf8; font-size: 1.2rem; text-decoration: none; font-weight: bold;">
+           Contact me via Email
+        </a>
+        <a href="Samruddhikotwal.pdf" target="_blank">Download Resume</a>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
